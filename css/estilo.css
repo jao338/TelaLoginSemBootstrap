@@ -6,6 +6,11 @@
     font-family: 'Poppins';
 }
 
+body * {
+
+    box-sizing: border-box;
+}
+
 .login{
     width: 100vw;
     height: 100vh;
@@ -84,7 +89,7 @@
 .textfield > input::placeholder{
     color: #f0ffffde;
     text-align: center;
-    opacity: 0.3;
+    opacity: 0.3;   
 }
 
 .linha{
@@ -134,4 +139,50 @@
     margin-top: 32px;
     width: 440px;
     color: white;
+}
+
+@media only screen and (max-width: 1450px){
+    
+    .card-login{
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 950px){
+    
+    
+    .login{
+        flex-direction: column;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-img-login{
+        width: 50vw;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    
+    .card-login{
+        width: 90%;
+    }
+
+    .card-login > h1{
+        font-size: 32pt;
+    }
 }
